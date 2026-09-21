@@ -1,0 +1,366 @@
+body {
+    background-position: center;
+    background-size: cover;
+    background-image:url("imagens/dalmataTB.jpg");
+
+}
+
+.h2{
+    text-align: center;
+    text-shadow: 1px;
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'Playfair Display',serif;
+    background-color: crimson;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px brown;
+    padding: 30px;
+}
+.caixaCentral{
+    background-color: rgb(230, 222, 212);
+   
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 2px 2px 8px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:brown;
+    transition: transform 2.5s ease;
+    cursor: pointer;
+    
+}
+.h3{
+    font-size: 20px;
+}
+.caixaCentral:hover{
+transform: scale(1.1);
+}
+.opcaoLogin{
+    background-color: crimson ;
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    text-align: center;
+
+}
+.semCadastro{
+    
+    width: 600px;
+    
+    background-color: rgb(230, 222, 212);
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: brown;
+    text-align: center;
+    box-shadow: 2px 2px 8px;
+    
+}
+#emaillogin{
+    border-radius: 8px;
+    margin: auto;
+    align-items: center;
+
+}
+#senhalogin{
+    border-radius: 8px;
+    margin:auto;
+    align-items: center;
+}
+button{
+    cursor:grab;
+    transition: scale(1.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    background-color: crimson;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: brown;
+}
+
+.linkcadastro{
+    background-color: aliceblue;
+    box-shadow: 1px 1px 6px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.linkcadastro:hover{
+    transform: scale(1.1);
+    background-color: rgb(205, 185, 155);
+}
+.cadastrar{
+  background-color: rgb(230, 222, 212); 
+  width: 300px;
+  border-radius: 8px;
+  padding:20px;
+  text-align: center;
+  height:20vh;
+  margin:20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: brown;
+  box-shadow: 2px 2px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+   
+}
+.cadastrando2{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin:0; 
+}
+.bo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin:0; 
+}
+#emailCadastro{
+    border-radius: 8px;
+    width: 105px;
+}
+#senhaCadastro{
+    border-radius: 8px;
+    width: 100px;
+}
+.tparavoltar{
+    align-items: center;
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 1px 1px 8px;
+    border-radius: 8px;
+    width: 130px;
+    height: 20px;
+}
+.tparavoltar:hover{
+    background-color: rgb(205, 185, 155);
+}
+.realizar{
+    background-color: rgb(230, 222, 212);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: brown;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.b2{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.opcaoLoginDog{
+    background-color: crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px brown;
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 20px;
+    
+
+}
+#nomeDog{
+    border-radius: 8px;
+    width: 180px;
+
+}
+#idDog{
+    border-radius: 8px;
+    width: 180px;
+}
+.cadastrando{
+    background-color: crimson;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    text-align: center;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.b3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    gap: 30px;
+}
+#nomeD{
+ border-radius: 8px;
+ width: 180px;
+}
+#idadeDog{
+ border-radius: 8px;
+ width: 180px;
+}
+#especieDog{
+ border-radius: 8px;
+ width: 180px;
+}
+#obsDog{
+ border-radius: 8px;
+ width: 180px;
+}
+
+.links{
+    border-radius: 8px;
+    background-color:rgb(230, 222, 212);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.link1{
+     border-radius: 8px;
+    background-color:aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+   
+}
+.link2{
+ border-radius: 8px;
+    background-color:aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+}
+.link1:hover{
+    background-color:rgb(205, 185, 155);
+}
+.link2:hover{
+    background-color:rgb(205, 185, 155); ;
+}
+.inputscadastrodog{
+    gap: 15px;
+}
+.titulo{
+    background-color: crimson;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px brown;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    transition: transform 3.0s ease;
+    padding: 15px;
+
+}
+.titulo:hover{
+transform: scale(1.1);
+cursor: pointer;
+}
+.b4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    gap:30px;
+}
+.areaAgendamento{
+    background-color: rgb(230, 222, 212);;
+    border-radius: 8px;
+    box-shadow: 3px 3px 9px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:brown;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-size: 20px;
+    padding: 20px;
+    gap: 15px;
+
+}
+#dataIn{
+border-radius: 8px;
+}
+#dataOut{
+border-radius: 8px;
+}
+#hourIn{
+border-radius: 8px;
+}
+#hourOut{
+border-radius: 8px;
+}
+
+    
+
+.conclusao{
+    background-color:rgb(230, 222, 212); 
+    border-radius: 8px;
+    box-shadow: 3px 3px 9px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: brown;
+    align-items: center;
+    width: 600px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin-top: 100px;
+    padding: 30px;
+    transition: transform 2.0s ease;
+    cursor:pointer;
+
+}
+.conclusao:hover{
+transform: scale(1.1);
+
+}
+.quebraLinha{
+    margin-top: 160px;
+}
+.rodape{
+    background-color: crimson;
+    border-radius: 7px;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+  
+
+}
+.ul{
+    margin: auto; 
+}

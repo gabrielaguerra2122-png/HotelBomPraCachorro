@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilizando.css">
+    <meta charset="UTF-8">
+    <title>agendamento</title>
+   
+</head>
+<body class="b4"> 
+    <h2 class="titulo">Bem-Vinda/o a área de agendamento online ✅🐕</h2>
+    <header class="areaAgendamento">
+        <h3>Vamos agendar a experiencia que seu dog nunca vai esquecer🐶🦮</h3>
+        <label>Informe a data de entrada</label>
+        <input type="date" id="dataIn">
+        
+        <label>Informe a data de saida</label>
+        <input type="date" id="dataOut"> 
+
+        <label>Insira o horario de entrada</label>
+        <input type="time" id="hourIn">
+        <label>Insira o horario que voce ira busca-lo</label>
+        <input type="time" id="hourOut">
+
+        <label>Sera AllInclusive?</label>
+        <select id="allInclusive">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+        <button onclick="calcularValor()">Calcular valor</button>
+        <p>Total: R$ <span id="valor">0</span></p>
+        <button onclick="agendar()">Finalizar Agendamento</button>
+        
+    </header>
+<script src="jsexterno.js"></script> 
+</body>
+</html>
