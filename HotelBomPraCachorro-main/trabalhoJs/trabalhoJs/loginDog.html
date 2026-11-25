@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Doguinho | Hotel Bom Pra Cachorro</title>
+    <link rel="icon" href="imagens/dogFofo.png">
+    <link rel="stylesheet" href="estilizando.css">
+</head>
+<body class="b2">
+
+<div class="siteHotel">
+
+    <header class="menuHotel">
+        <a href="index.html" class="logoHotel">
+            🐾 Bom Pra Cachorro
+        </a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#servicos">Serviços</a>
+        </nav>
+
+        <a href="areaCadastroDog.html" class="btnEntrar">
+            Cadastrar Pet
+        </a>
+    </header>
+
+    <main class="paginaFormulario">
+
+        <section class="apresentacaoFormulario">
+            <span class="etiquetaHotel">
+                🐾 Área do seu melhor amigo
+            </span>
+
+            <h2 class="realizar">
+                Seu melhor AUmigo já está cadastrado?
+                <span>Faça o login!</span>
+            </h2>
+
+            <p>
+                Informe os dados do seu doguinho
+                para continuar com a reserva.
+            </p>
+
+            <div class="decoracaoPet">
+                🐶 🦴 💛
+            </div>
+        </section>
+
+        <header class="opcaoLoginDog cartaoFormulario">
+            <main>
+                <div class="iconeFormulario">🐶</div>
+
+                <h3 id="opcaoLoginDog">
+                    Já é cadastrado?
+                </h3>
+
+                <h4>Realize o Login do seu Doguinho</h4>
+
+                <label for="nomeDog">
+                    Nome do Doguinho
+                </label>
+                <input
+                    type="text"
+                    id="nomeDog"
+                    placeholder="Informe o nome do Doguinho"
+                >
+
+                <label for="idDog">
+                    ID de identificação
+                </label>
+                <input
+                    type="text"
+                    id="idDog"
+                    placeholder="Informe o ID de identificação"
+                >
+
+                <button onclick="fazerLoginDog()">
+                    Entrar com meu Doguinho
+                </button>
+            </main>
+
+            <div class="semCadastro">
+                <h2>Ainda não tem o cadastro do seu 🐶?</h2>
+
+                <a href="areaCadastroDog.html">
+                    Cadastre-o
+                </a>
+            </div>
+        </header>
+
+    </main>
+
+    <footer class="footerHotel">
+        <p>Todo doguinho merece carinho! 🐾</p>
+    </footer>
+
+</div>
+
+<script src="jsexterno.js"></script>
+</body>
+</html>

@@ -1,0 +1,858 @@
+
+/* HOTEL BOM PRA CACHORRO - NOVO VISUAL */
+
+:root {
+    --verde: #087e7b;
+    --escuro: #174e4a;
+    --creme: #fff9f1;
+    --amarelo: #ffad00;
+    --texto: #344b48;
+    --cinza: #71817d;
+    --borda: #e4eae6;
+    --sombra: 0 18px 45px rgba(43, 71, 60, .12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #fff9f1, #ffe8ca);
+    background-image: none;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--texto);
+}
+
+button, input, select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: var(--verde);
+}
+
+/* ESTRUTURA PRINCIPAL */
+
+.siteHotel {
+    max-width: 1200px;
+    margin: auto;
+    background: #fffbf6;
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    min-height: calc(100vh - 60px);
+}
+
+/* MENU */
+
+.menuHotel {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 20px 6%;
+    background: white;
+    border-bottom: 1px solid #eee7de;
+}
+
+.logoHotel {
+    color: var(--verde);
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.menuHotel nav {
+    display: flex;
+    gap: 26px;
+}
+
+.menuHotel nav a {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menuHotel nav a:hover {
+    color: #d78d00;
+}
+
+.btnEntrar, .btnPrincipal {
+    display: inline-block;
+    background: var(--amarelo);
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.btnEntrar:hover, .btnPrincipal:hover {
+    background: #e89900;
+    transform: translateY(-2px);
+}
+
+.footerHotel {
+    text-align: center;
+    color: var(--cinza);
+    font-size: 13px;
+    padding: 25px;
+    border-top: 1px solid #eee7de;
+}
+
+.etiquetaHotel {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #e5f4ee;
+    color: var(--verde);
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* PAGINA INICIAL */
+
+.conteudoHotel {
+    padding: 35px 6% 65px;
+}
+
+.heroHotel {
+    min-height: 460px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.textoHero h1 {
+    font-size: clamp(34px, 4.5vw, 54px);
+    line-height: 1.18;
+    color: var(--escuro);
+}
+
+.textoHero h1 span,
+.apresentacaoFormulario h1 span,
+.realizar span,
+.titulo span {
+    color: var(--verde);
+}
+
+.textoHero p {
+    color: var(--cinza);
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.imagemHero {
+    min-height: 340px;
+    background: #fff0dc;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.imagemHero img {
+    max-width: 320px;
+    max-height: 320px;
+    width: 80%;
+    object-fit: contain;
+}
+
+/* SERVICOS */
+
+.servicosHotel {
+    text-align: center;
+    padding: 55px 0;
+}
+
+.servicosHotel h2,
+.sobreHotel h2 {
+    color: var(--escuro);
+    font-size: 30px;
+}
+
+.servicosHotel > p {
+    color: var(--cinza);
+}
+
+.cardsHotel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 32px;
+}
+
+.cardServico {
+    background: #fff3e5;
+    border-radius: 20px;
+    padding: 30px 22px;
+    transition: .2s;
+}
+
+.cardServico:hover {
+    transform: translateY(-5px);
+}
+
+.iconeServico {
+    font-size: 42px;
+}
+
+.cardServico h3 {
+    color: var(--verde);
+}
+
+.cardServico p,
+.sobreHotel p {
+    color: var(--cinza);
+    line-height: 1.7;
+}
+
+.sobreHotel {
+    background: #e5f4ee;
+    border-radius: 24px;
+    padding: 45px 30px;
+    text-align: center;
+}
+
+.sobreHotel p {
+    max-width: 650px;
+    margin: 15px auto 25px;
+}
+
+/* FORMULARIOS */
+
+.paginaFormulario {
+    min-height: 640px;
+    padding: 65px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.apresentacaoFormulario h1,
+.apresentacaoFormulario .realizar {
+    color: var(--escuro);
+    font-size: clamp(30px, 3.5vw, 44px);
+    line-height: 1.25;
+}
+
+.apresentacaoFormulario > p,
+.caixaCentral h4 {
+    color: var(--cinza);
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.caixaCentral h3 {
+    color: var(--verde);
+}
+
+.decoracaoPet {
+    background: #fff0dc;
+    border-radius: 24px;
+    padding: 30px;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 30px;
+}
+
+/* CARTOES DE LOGIN E CADASTRO */
+
+.cartaoFormulario,
+.cadastrar,
+.cadastrando,
+.opcaoLogin,
+.opcaoLoginDog {
+    width: 100%;
+    max-width: 530px;
+    background: white;
+    border: 1px solid #eee7de;
+    border-radius: 24px;
+    box-shadow: var(--sombra);
+    padding: 38px;
+    color: var(--texto);
+}
+
+.cartaoFormulario h2,
+.cartaoFormulario h3,
+.cadastrar h2,
+.cadastrando h2 {
+    color: var(--escuro);
+    text-align: center;
+}
+
+.cartaoFormulario h4,
+.cartaoFormulario .h3,
+.subtituloFormulario {
+    color: var(--cinza);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.iconeFormulario {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    background: #e5f4ee;
+    border-radius: 18px;
+    font-size: 30px;
+}
+
+.cartaoFormulario main,
+.cadastrando2,
+.inputscadastrodog,
+.opcaoLogin main,
+.opcaoLoginDog main {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.cartaoFormulario label,
+.cadastrar label,
+.cadastrando label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--escuro);
+    margin-top: 6px;
+}
+
+.cartaoFormulario input,
+.cadastrar input,
+.cadastrando input,
+.opcaoLogin input,
+.opcaoLoginDog input {
+    width: 100%;
+    min-height: 48px;
+    padding: 13px 15px;
+    border: 1.5px solid var(--borda);
+    background: #fcfdfb;
+    border-radius: 12px;
+    outline: none;
+    color: var(--texto);
+}
+
+input:focus,
+select:focus {
+    border-color: var(--verde) !important;
+    box-shadow: 0 0 0 4px rgba(8, 126, 123, .1);
+    outline: none;
+}
+
+/* BOTOES */
+
+.cartaoFormulario button,
+.cadastrar button,
+.cadastrando button,
+.opcaoLogin button,
+.opcaoLoginDog button {
+    width: 100%;
+    min-height: 50px;
+    padding: 13px;
+    background: var(--amarelo);
+    color: white;
+    border: 0;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.cartaoFormulario button:hover,
+.cadastrar button:hover,
+.cadastrando button:hover,
+.opcaoLogin button:hover,
+.opcaoLoginDog button:hover {
+    background: #e89900;
+    transform: translateY(-2px);
+}
+
+/* LINKS */
+
+.semCadastro,
+.tparavoltar,
+.links {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--borda);
+    text-align: center;
+}
+
+.semCadastro h2 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.semCadastro a,
+.tparavoltar a,
+.links a {
+    color: var(--verde);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.links a:hover,
+.semCadastro a:hover,
+.tparavoltar a:hover {
+    text-decoration: underline;
+}
+
+.textoAjuda {
+    color: var(--cinza);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.identificacaoPet {
+    background: #e5f4ee;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.identificacaoPet span {
+    color: var(--verde);
+    font-size: 20px;
+}
+
+/* COMPATIBILIDADE COM HTML ORIGINAL */
+
+body.bo,
+body.b2,
+body.b3,
+body.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.bo > .cadastrar,
+.b3 > .cadastrando,
+.b2 > .opcaoLoginDog,
+.inicio > .opcaoLogin {
+    margin: 0 auto;
+}
+
+.bo > .tparavoltar,
+.b3 > .links,
+.b2 > .semCadastro,
+.inicio > .semCadastro {
+    width: 100%;
+    max-width: 530px;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.b2 > .realizar,
+.inicio > .h2 {
+    max-width: 700px;
+    color: var(--escuro);
+    text-align: center;
+}
+
+.inicio > .caixaCentral {
+    max-width: 530px;
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.b3 > .cadastrando {
+    padding: 38px;
+}
+
+.b3 .inputscadastrodog,
+.bo .cadastrando2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* AGENDAMENTO */
+
+.paginaAgendamento {
+    max-width: 900px;
+    margin: auto;
+    padding: 55px 25px 80px;
+}
+
+.cabecalhoAgendamento {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cabecalhoAgendamento .titulo {
+    color: var(--escuro);
+    font-size: clamp(28px, 4vw, 40px);
+}
+
+.cabecalhoAgendamento p {
+    color: var(--cinza);
+}
+
+.areaAgendamento {
+    width: 100%;
+    background: white;
+    border-radius: 24px;
+    box-shadow: var(--sombra);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.topoFormulario {
+    text-align: center;
+}
+
+.topoFormulario h3 {
+    color: var(--escuro);
+}
+
+.secaoAgendamento {
+    border-bottom: 1px solid var(--borda);
+    padding-bottom: 28px;
+    margin-bottom: 14px;
+}
+
+.secaoAgendamento h4 {
+    color: var(--escuro);
+    font-size: 19px;
+}
+
+.gradeCampos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.areaAgendamento label {
+    color: var(--escuro);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.areaAgendamento input,
+.areaAgendamento select {
+    width: 100%;
+    min-height: 49px;
+    border: 1.5px solid var(--borda);
+    border-radius: 12px;
+    background: #fcfdfb;
+    padding: 12px 14px;
+    color: var(--texto);
+}
+
+.resumoReserva {
+    background: #f0f8f3;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+}
+
+.resumoReserva h4 {
+    color: var(--escuro);
+}
+
+.areaAgendamento button {
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 12px;
+    font-weight: 700;
+    background: var(--verde);
+    color: white;
+    transition: .2s;
+}
+
+.areaAgendamento button:hover {
+    filter: brightness(.9);
+}
+
+.areaAgendamento .btnFinalizar,
+.areaAgendamento button:last-child {
+    background: var(--amarelo);
+}
+
+.totalReserva {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    color: var(--escuro);
+    font-size: 18px;
+}
+
+.totalReserva strong {
+    color: var(--verde);
+    font-size: 24px;
+}
+
+.b4 > .titulo {
+    max-width: 800px;
+    text-align: center;
+    color: var(--escuro);
+}
+
+.b4 > .areaAgendamento {
+    max-width: 650px;
+    margin: auto;
+}
+
+.b4 > .areaAgendamento p {
+    color: var(--verde);
+    font-weight: 700;
+}
+
+/* PAGINA DE CONFIRMACAO */
+
+.paginaSucesso {
+    max-width: 850px;
+    margin: auto;
+    padding: 65px 25px;
+}
+
+.conclusao {
+    background: white;
+    border-radius: 24px;
+    box-shadow: var(--sombra);
+    padding: 50px 35px;
+    text-align: center;
+}
+
+.iconeSucesso {
+    width: 85px;
+    height: 85px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #dff5e7;
+    color: #168052;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.conclusao h2 {
+    color: var(--escuro);
+    font-size: clamp(25px, 3vw, 35px);
+    line-height: 1.5;
+}
+
+.conclusao h2 span {
+    color: #168052;
+    background: #e1f8ed;
+    padding: 4px 12px;
+    border-radius: 10px;
+}
+
+.conclusao h4 {
+    color: var(--cinza);
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.mensagemSucesso {
+    padding: 18px;
+    background: #fff3e5;
+    border-radius: 14px;
+    margin: 25px 0;
+    color: var(--escuro);
+}
+
+.quebraLinha br {
+    display: none;
+}
+
+.quebraLinha hr {
+    border: 0;
+    border-top: 1px solid var(--borda);
+    margin: 40px 0;
+}
+
+.rodape {
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--sombra);
+    padding: 35px;
+}
+
+.rodape h3 {
+    color: var(--escuro);
+    text-align: center;
+}
+
+.rodape .ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rodape label {
+    display: block;
+    color: var(--verde);
+    font-size: 16px;
+    border-bottom: 1px solid var(--borda);
+    padding-bottom: 8px;
+    margin: 20px 0 10px;
+}
+
+.rodape li {
+    padding: 7px 12px;
+    margin-bottom: 5px;
+    border-left: 3px solid #b5dfd2;
+    color: var(--cinza);
+}
+
+.b5 > .conclusao {
+    max-width: 680px;
+    margin: 50px auto;
+}
+
+.b5 > .quebraLinha,
+.b5 > .rodape {
+    max-width: 850px;
+    margin: 20px auto;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+    .menuHotel {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menuHotel nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .heroHotel,
+    .paginaFormulario {
+        grid-template-columns: 1fr;
+    }
+
+    .heroHotel,
+    .apresentacaoFormulario {
+        text-align: center;
+    }
+
+    .paginaFormulario {
+        gap: 30px;
+        padding: 40px 6%;
+    }
+
+    .cartaoFormulario {
+        margin: auto;
+    }
+
+    .cardsHotel {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        padding: 12px;
+    }
+
+    .siteHotel {
+        border-radius: 18px;
+    }
+
+    .menuHotel {
+        padding: 20px 14px;
+    }
+
+    .logoHotel {
+        font-size: 19px;
+    }
+
+    .conteudoHotel {
+        padding: 30px 20px;
+    }
+
+    .textoHero h1 {
+        font-size: 34px;
+    }
+
+    .paginaFormulario {
+        padding: 30px 18px;
+    }
+
+    .cartaoFormulario,
+    .cadastrar,
+    .cadastrando,
+    .opcaoLogin,
+    .opcaoLoginDog {
+        padding: 26px 20px;
+    }
+
+    .paginaAgendamento,
+    .paginaSucesso {
+        padding: 30px 15px;
+    }
+
+    .areaAgendamento {
+        padding: 24px 18px;
+    }
+
+    .gradeCampos {
+        grid-template-columns: 1fr;
+    }
+
+    .resumoReserva {
+        padding: 20px 15px;
+    }
+
+    .conclusao,
+    .rodape {
+        padding: 30px 20px;
+    }
+
+    .decoracaoPet {
+        font-size: 40px;
+    }
+}

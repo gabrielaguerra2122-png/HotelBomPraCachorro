@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento | Hotel Bom Pra Cachorro</title>
+    <link rel="icon" href="imagens/dogFofo.png">
+    <link rel="stylesheet" href="estilizando.css">
+</head>
+<body class="b4">
+
+<div class="siteHotel">
+
+    <header class="menuHotel">
+        <a href="index.html" class="logoHotel">
+            🐾 Bom Pra Cachorro
+        </a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#servicos">Serviços</a>
+        </nav>
+
+        <a href="loginDog.html" class="btnEntrar">
+            Meu Pet
+        </a>
+    </header>
+
+    <main class="paginaAgendamento">
+
+        <div class="cabecalhoAgendamento">
+            <span class="etiquetaHotel">
+                🐾 Reserva online
+            </span>
+
+            <h2 class="titulo">
+                Vamos preparar uma estadia
+                <span>inesquecível?</span>
+            </h2>
+
+            <p>
+                Escolha as datas, os horários e o tipo
+                de hospedagem do seu melhor amigo.
+            </p>
+        </div>
+
+        <header class="areaAgendamento">
+
+            <div class="topoFormulario">
+                <div class="iconeFormulario">📅</div>
+
+                <h3>
+                    Agende a experiência que seu dog
+                    nunca vai esquecer! 🐶
+                </h3>
+            </div>
+
+            <div class="secaoAgendamento">
+                <h4>📅 Período da hospedagem</h4>
+
+                <div class="gradeCampos">
+                    <div class="campo">
+                        <label for="dataIn">
+                            Informe a data de entrada
+                        </label>
+                        <input type="date" id="dataIn">
+                    </div>
+
+                    <div class="campo">
+                        <label for="dataOut">
+                            Informe a data de saída
+                        </label>
+                        <input type="date" id="dataOut">
+                    </div>
+                </div>
+            </div>
+
+            <div class="secaoAgendamento">
+                <h4>🕒 Horários</h4>
+
+                <div class="gradeCampos">
+                    <div class="campo">
+                        <label for="hourIn">
+                            Horário de entrada
+                        </label>
+                        <input type="time" id="hourIn">
+                    </div>
+
+                    <div class="campo">
+                        <label for="hourOut">
+                            Horário de saída
+                        </label>
+                        <input type="time" id="hourOut">
+                    </div>
+                </div>
+            </div>
+
+            <div class="secaoAgendamento">
+                <h4>💛 Tipo de hospedagem</h4>
+
+                <div class="campo">
+                    <label for="allInclusive">
+                        Será All-Inclusive?
+                    </label>
+
+                    <select id="allInclusive">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+
+                <p class="textoAjuda">
+                    Escolha a opção desejada antes
+                    de calcular o valor da reserva.
+                </p>
+            </div>
+
+            <div class="resumoReserva">
+                <h4>Resumo da reserva</h4>
+
+                <button
+                    class="btnCalcular"
+                    onclick="calcularValor()">
+                    Calcular valor
+                </button>
+
+                <p class="totalReserva">
+                    Total:
+                    <strong>R$ <span id="valor">0</span></strong>
+                </p>
+
+                <button
+                    class="btnFinalizar"
+                    onclick="agendar()">
+                    Finalizar Agendamento 🐾
+                </button>
+            </div>
+
+        </header>
+
+    </main>
+
+    <footer class="footerHotel">
+        <p>Hotel Bom Pra Cachorro — Reservas com carinho 💛</p>
+    </footer>
+
+</div>
+
+<script src="jsexterno.js"></script>
+</body>
+</html>

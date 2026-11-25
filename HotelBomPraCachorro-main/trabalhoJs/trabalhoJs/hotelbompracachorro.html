@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Hotel Bom Pra Cachorro</title>
+    <link rel="icon" href="imagens/dogFofo.png">
+    <link rel="stylesheet" href="estilizando.css">
+</head>
+<body class="inicio">
+
+<div class="siteHotel">
+
+    <header class="menuHotel">
+        <a href="index.html" class="logoHotel">
+            🐾 Bom Pra Cachorro
+        </a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#servicos">Serviços</a>
+            <a href="index.html#sobre">Sobre nós</a>
+        </nav>
+
+        <a href="areaCadastro.html" class="btnEntrar">
+            Cadastre-se
+        </a>
+    </header>
+
+    <main class="paginaFormulario">
+
+        <section class="apresentacaoFormulario">
+            <span class="etiquetaHotel">🐾 Seja bem-vindo!</span>
+
+            <h1 class="h2">
+                Que bom ter você
+                <span>por aqui!</span>
+            </h1>
+
+            <div class="caixaCentral">
+                <h3>Hotel Bom Pra Cachorro</h3>
+                <h4>
+                    Faça seu login para continuar
+                    e proporcionar uma experiência
+                    inesquecível ao seu doguinho.
+                    <br>
+                    Aqui o cuidado é bom pra cachorro! 🐶
+                </h4>
+            </div>
+
+            <div class="decoracaoPet">
+                🐕 🦴 🐾
+            </div>
+        </section>
+
+        <section class="opcaoLogin cartaoFormulario">
+            <main>
+                <div class="iconeFormulario">🐾</div>
+
+                <h2 id="opcaoLogin">Já é cadastrado?</h2>
+                <h3 class="h3">Realize seu Login</h3>
+
+                <label for="emaillogin">Seu e-mail</label>
+                <input
+                    type="email"
+                    id="emaillogin"
+                    placeholder="Informe seu email"
+                    autocomplete="email"
+                >
+
+                <label for="senhalogin">Sua senha</label>
+                <input
+                    type="password"
+                    id="senhalogin"
+                    placeholder="Informe sua senha"
+                    autocomplete="current-password"
+                >
+
+                <button class="fazerlogin" onclick="fazerLogin()">
+                    Entrar na minha conta
+                </button>
+            </main>
+
+            <div class="semCadastro">
+                <h2>Ainda não tem conta vinculada?</h2>
+                <a class="linkcadastro" href="areaCadastro.html">
+                    Cadastre-se
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footerHotel">
+        <p>Hotel Bom Pra Cachorro 🐶</p>
+    </footer>
+
+</div>
+
+<script src="jsexterno.js"></script>
+</body>
+</html>
